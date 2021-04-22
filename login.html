@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Restro login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <a href="index.html" >GO TO STORE</a>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDYMoyxuncD-ogmjDn4pcs3peS9Vd4xT-c",
+      authDomain: "login-74dd8.firebaseapp.com",
+      projectId: "login-74dd8",
+      storageBucket: "login-74dd8.appspot.com",
+      messagingSenderId: "733966523503",
+      appId: "1:733966523503:web:ea10bc32e692e0a84d819a",
+      measurementId: "G-CCQZE2ZYGF"  
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/login.js"></script>
+
+</body>
+</html>
